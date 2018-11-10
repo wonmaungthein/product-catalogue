@@ -29,8 +29,8 @@ add_action('init', function () {
 add_action('init', function () {
     register_post_type('Cars', [
         'labels' => [
-            'name' => __('Electric'),
-            'singular_name' => __('petrol'),
+            'name' => __('Cars'),
+            'singular_name' => __('Car'),
         ],
         'public' => true,
         'has_archive' => true,
