@@ -15,9 +15,9 @@ add_action('wp_head', function(){
 });
 
 add_action('init', function () {
-    register_post_type('people', [
+    register_post_type('Products', [
         'labels' => [
-            'name' => __('People'),
+            'name' => __('Products'),
             'singular_name' => __('Person'),
         ],
         'public' => true,
