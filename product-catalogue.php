@@ -24,3 +24,15 @@ add_action('init', function () {
         'has_archive' => true,
     ]);
 });
+
+// Testing another post type 
+add_action('init', function () {
+    register_post_type('Cars', [
+        'labels' => [
+            'name' => __('Electric'),
+            'singular_name' => __('petrol'),
+        ],
+        'public' => true,
+        'has_archive' => true,
+    ]);
+});
