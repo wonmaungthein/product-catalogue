@@ -13,3 +13,14 @@ Domain Path: /languages
 add_action('wp_head', function(){
     echo '<script> alert("Welcome to my site!") </script>';
 });
+
+add_action('init', function () {
+    register_post_type('people', [
+        'labels' => [
+            'name' => __('People'),
+            'singular_name' => __('Person'),
+        ],
+        'public' => true,
+        'has_archive' => true,
+    ]);
+});
